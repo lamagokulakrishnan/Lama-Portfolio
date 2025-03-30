@@ -186,7 +186,7 @@ function sendEmail(e) {
     `;
 
     // Using EmailJS to send email
-    emailjs.send('service_s2jdzo3', 'template_9j2x4ic', {
+    emailjs.send('your service id', 'your template id', {
         to_email: 'lamagokulakrishnan@gmail.com',
         from_name: name,
         from_email: email,
