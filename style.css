@@ -994,6 +994,61 @@ footer span a:hover{
     word-break: break-word;
 }
 
+/* Add these styles for the status message */
+.button-area {
+    position: relative;
+}
+
+.status-message {
+    position: absolute;
+    left: 180px; /* Adjust based on your button width */
+    top: 50%;
+    transform: translateY(-50%);
+    color: crimson;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.status-message.show {
+    opacity: 1;
+}
+
+/* Social media section styling */
+.social-media {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-media .title::after {
+    content: "connect with me";
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: #111;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -1164,6 +1219,16 @@ footer span a:hover{
     .popup-buttons {
         gap: 15px;
     }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
 }
 
 /* Responsive adjustments for education timeline */
@@ -1201,24 +1266,4 @@ footer span a:hover{
         top: -50px;
         right: 0;
     }
-}
-
-/* Add these styles for the status message */
-.button-area {
-    position: relative;
-}
-
-.status-message {
-    position: absolute;
-    left: 180px; /* Adjust based on your button width */
-    top: 50%;
-    transform: translateY(-50%);
-    color: crimson;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.status-message.show {
-    opacity: 1;
 }
